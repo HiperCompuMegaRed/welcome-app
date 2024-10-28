@@ -12,7 +12,7 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'mid'
+      environments: 'minimal'
     # Project
       projectName: 'hipercompumegared'
 #-------------------------------------------------------------------------------------------------#
