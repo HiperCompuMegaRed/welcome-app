@@ -22,6 +22,7 @@ jobs:
       shamanopsTechnicalApprovers: 'lifschitzflorencia@gmail.com'
       shamanopsBusinessApproversMinimalProd: '0'
       shamanopsTechnicalApproversMinimalProd: '1'
+      appInternalPort: '80'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
