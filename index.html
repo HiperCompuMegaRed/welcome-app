@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeti App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Para que el confeti no desborde */
+        }
+	img {
+            width: 180px; /* Ajusta el tamaño del logo aquí */
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: black; /* Cambia el color del texto a negro */
+            text-align: center; /* Centra el texto */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.shamanops.com/assets/img2/shaman_festejo.png" alt="Logo festejo">	
+    <h1>Welcome to ShamanOps!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function launchConfetti() {
+            const duration = 3 * 1000; // Duración en milisegundos
+            const end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 100,
+                    angle: Math.random() * 360,
+                    spread: 70,
+                    origin: {
+                        x: Math.random(),
+                        y: Math.random() - 0.2 // Deja un poco de espacio en la parte superior
+                    }
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        }
+
+        window.onload = launchConfetti;
+    </script>
+</body>
+</html>
