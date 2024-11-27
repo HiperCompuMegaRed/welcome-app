@@ -12,7 +12,7 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'mid'
+      environments: 'minimal'
     # Project
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
@@ -22,11 +22,16 @@ jobs:
       shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      # Enable Approvals Job for STG environment
-      shamanopsApprovalsStg: 'true'
-      shamanopsBusinessApproversMinimalStg: '1'
-      shamanopsTechnicalApproversMinimalStg: '1'
-      strategyCanaryStg: 'true'
+    # Enable Dynamics Enviroments
+      shamanopsDynamicEnvsEnabled: 'true'
+    # Dynamics Enviroments list
+      shamanopsDynamicEnvs: 'flor'
+    # Dynamics Enviroments Approvals
+      shamanopsApprovalsDynamicEnvs: 'true'
+      shamanopsBusinessApproversMinimalDynamicEnvs: '1'
+      shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
+
+      
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
