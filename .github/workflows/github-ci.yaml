@@ -25,7 +25,7 @@ jobs:
     # Enable Dynamics Enviroments
       shamanopsDynamicEnvsEnabled: 'true'
     # Dynamics Enviroments list
-      shamanopsDynamicEnvs: 'flor'
+      shamanopsDynamicEnvs: 'qaa'
     # Dynamics Enviroments Approvals
       shamanopsApprovalsDynamicEnvs: 'true'
       shamanopsBusinessApproversMinimalDynamicEnvs: '1'
