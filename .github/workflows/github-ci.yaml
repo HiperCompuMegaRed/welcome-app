@@ -1,3 +1,4 @@
+
 ###################################################################################################
 ############################# ShamanOps pipeline | GitHub Actions #################################
 ###################################################################################################
@@ -8,7 +9,7 @@ on:
     branches: [ "main" ]
 jobs:
   shamanops:
-    uses: shamanops/resources/.github/workflows/base-stable.yaml@main
+    uses: shamanops/resources/.github/workflows/base-rc.yaml@main
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
@@ -21,6 +22,8 @@ jobs:
       shamanopsApprovalsProd: 'false'
     # SCA check
       security_check_enabled: 'false'
+    # Confidential Containers
+      confidential_containers_enabled: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
@@ -34,3 +37,4 @@ jobs:
       shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
 ##################################################################################################
 ##################################################################################################
+
