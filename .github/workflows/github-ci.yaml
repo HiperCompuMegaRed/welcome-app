@@ -12,26 +12,15 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'mid'
+      environments: 'minimal'
     # Project
-      projectName: 'examples'
+      projectName: 'hipercompumegared'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'lifschitzflorencia@gmail.com'
-      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
-      shamanopsBusinessApproversMinimalProd: '1'
-      shamanopsTechnicalApproversMinimalProd: '1'
-    # Enable Dynamics Enviroments
-      shamanopsDynamicEnvsEnabled: 'true'
-    # Dynamics Enviroments list
-      shamanopsDynamicEnvs: 'qaa'
-    # Dynamics Enviroments Approvals
-      shamanopsApprovalsDynamicEnvs: 'true'
-      shamanopsBusinessApproversMinimalDynamicEnvs: '1'
-      shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
-
-      
+      shamanopsApprovalsProd: 'false'
+    # SCA check
+      security_check_enabled: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
