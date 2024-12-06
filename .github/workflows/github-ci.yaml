@@ -23,7 +23,7 @@ jobs:
     # SCA check
       security_check_enabled: 'false'
     # Confidential Containers
-      confidential_containers_enabled: 'false'
+      confidential_containers_enabled: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
