@@ -18,8 +18,8 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'flifschitz@shamanops.com'
-      shamanopsTechnicalApprovers: 'lifschitzflorencia@gmail.com'
+      shamanopsBusinessApprovers: 'business-user@customer.com'
+      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
 #-------------------------------------------------------------------------------------------------#
