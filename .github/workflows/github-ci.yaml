@@ -21,7 +21,7 @@ jobs:
       shamanopsBusinessApprovers: 'flifschitz@shamanops.com'
       shamanopsTechnicalApprovers: 'lifschitzflorencia@gmail.com'
       shamanopsBusinessApproversMinimalProd: '0'
-      shamanopsTechnicalApproversMinimalProd: '0'
+      shamanopsTechnicalApproversMinimalProd: '1'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
