@@ -20,7 +20,7 @@ jobs:
     # Approvals
       shamanopsBusinessApprovers: 'flifschitz@shamanops.com'
       shamanopsTechnicalApprovers: 'lifschitzflorencia@gmail.com'
-      shamanopsBusinessApproversMinimalProd: '0'
+      shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
 #-------------------------------------------------------------------------------------------------#
     secrets:
