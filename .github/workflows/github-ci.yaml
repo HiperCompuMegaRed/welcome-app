@@ -27,7 +27,7 @@ jobs:
       # To use Canary strategy in your enviroments set this to 'true'
       strategyCanaryDev: 'true'
       # To use BlueGreen strategy in your enviroments set this to 'true'
-      strategyBlueGreenDev: 'true'
+      strategyBlueGreenDev: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
