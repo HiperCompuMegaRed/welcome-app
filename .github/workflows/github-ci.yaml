@@ -18,7 +18,7 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'business-user@customer.com'
+      shamanopsBusinessApprovers: 'lifschitzf@shamanops.com'
       shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '0'
       shamanopsTechnicalApproversMinimalProd: '0'
