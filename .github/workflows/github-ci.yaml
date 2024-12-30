@@ -25,12 +25,12 @@ jobs:
     # Deployment Strategy
       # By default the deploys will use the rolling strategy
       # To use Canary strategy in your enviroments set this to 'true'
-      strategyCanaryDev: 'true'
-      strategyCanaryStg: 'true'
+      strategyCanaryDev: 'false'
+      strategyCanaryStg: 'false'
       strategyCanaryProd: 'false'
       # To use BlueGreen strategy in your enviroments set this to 'true'
-      strategyBlueGreenDev: 'true'
-      strategyBlueGreenStg: 'true'
+      strategyBlueGreenDev: 'false'
+      strategyBlueGreenStg: 'false'
       strategyBlueGreenProd: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
