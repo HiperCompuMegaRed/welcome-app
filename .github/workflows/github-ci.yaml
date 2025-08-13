@@ -12,25 +12,14 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'minimal'
+      environments: 'full'
     # Project
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
-      shamanopsBusinessApproversMinimalProd: '0'
-      shamanopsTechnicalApproversMinimalProd: '0'
-    # Deployment Strategy
-      # By default the deploys will use the rolling strategy
-      # To use Canary strategy in your enviroments set this to 'true'
-      strategyCanaryDev: 'false'
-      strategyCanaryStg: 'false'
-      strategyCanaryProd: 'false'
-      # To use BlueGreen strategy in your enviroments set this to 'true'
-      strategyBlueGreenDev: 'false'
-      strategyBlueGreenStg: 'false'
-      strategyBlueGreenProd: 'false'
+      shamanopsBusinessApprovers: 'business-user@customer.com'
+      shamanopsTechnicalApprovers: 'technical-user@customer.com'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
@@ -41,6 +30,7 @@ jobs:
       shamanops_manifest_repository_token: ${{ secrets.shamanops_manifest_repository_token }}
       shamanops_chat_webhook: ${{ secrets.shamanops_chat_webhook }}
       shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
+      shamanops_secondary_registry_password: ${{ secrets.shamanops_secondary_registry_password }}
       shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
 ##################################################################################################
 ##################################################################################################
