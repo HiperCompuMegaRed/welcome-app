@@ -20,6 +20,9 @@ jobs:
     # Approvals
       shamanopsBusinessApprovers: 'business-user@customer.com'
       shamanopsTechnicalApprovers: 'technical-user@customer.com'
+    # SCA check
+      security_check_enabled: 'true'
+      security_check_blocker: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
